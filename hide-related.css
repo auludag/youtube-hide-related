@@ -1,0 +1,18 @@
+/*
+ * YouTube izleme sayfasındaki sağ kenar çubuğundaki önerilen/ilgili
+ * (related) videoları gizler. "Video removed" gibi boş kutucuklar
+ * da çıkmaz, çünkü listenin tamamı kaldırılır.
+ */
+
+/* Masaüstü: izleme sayfasındaki ilgili videolar listesi */
+ytd-watch-next-secondary-results-renderer,
+#related.ytd-watch-flexy,
+#related.style-scope.ytd-watch-flexy {
+  display: none !important;
+}
+
+/* İzleme videosunun altındaki otomatik/önerilen video kartları (mobil web) */
+ytm-watch-next-secondary-results-renderer,
+ytm-item-section-renderer[section-identifier="related-items"] {
+  display: none !important;
+}
