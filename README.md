@@ -4,11 +4,36 @@ YouTube izleme sayfasında sağ taraftaki önerilen (related) videoları **tamam
 
 ## Kurulum (Brave / Chrome)
 
-1. Bu depoyu indirin veya klonlayın.
-2. Adres çubuğuna `brave://extensions` (Chrome'da `chrome://extensions`) yazın.
-3. Sağ üstten **Developer mode**'u açın.
-4. **Load unpacked** deyip bu klasörü seçin.
-5. Bir YouTube videosu açın; sağdaki öneri listesi görünmeyecektir.
+Uzantı henüz mağazada olmadığı için "paketlenmemiş uzantı" (unpacked) olarak yüklenir. Adımlar:
+
+1. **Dosyaları indirin.**
+   Bu depo sayfasında yeşil **Code** düğmesine tıklayın → **Download ZIP**.
+   ([Doğrudan bağlantı](https://github.com/auludag/youtube-hide-related/archive/refs/heads/main.zip))
+
+2. **ZIP'i çıkarın.**
+   İndirdiğiniz `youtube-hide-related-main.zip` dosyasını sağ tıklayıp bir klasöre çıkarın. İçinde `manifest.json`, `hide-related.css` ve `content.js` dosyalarının bulunduğu klasörü not edin.
+
+3. **Uzantılar sayfasını açın.**
+   Adres çubuğuna Brave'de `brave://extensions`, Chrome'da `chrome://extensions` yazıp Enter'a basın.
+
+4. **Geliştirici modunu açın.**
+   Sayfanın sağ üstündeki **Developer mode** (Geliştirici modu) anahtarını etkinleştirin.
+
+5. **Uzantıyı yükleyin.**
+   **Load unpacked** (Paketlenmemiş yükle) düğmesine tıklayın ve 2. adımda çıkardığınız klasörü seçin.
+
+6. **Test edin.**
+   Herhangi bir YouTube videosu açın. Sağ taraftaki önerilen videolar listesi görünmeyecektir.
+
+> Not: Uzantı yalnızca YouTube izleme sayfasındaki **sağ kenar çubuğu** önerilerini gizler; video oynatıcı, yorumlar ve açıklama olduğu gibi kalır.
+
+## Güncelleme
+
+Depo güncellendiğinde yeni ZIP'i indirip klasörün üzerine yazın, ardından `brave://extensions` sayfasında uzantının **yenile** (↻) simgesine tıklayın.
+
+## Kaldırma
+
+`brave://extensions` sayfasında uzantıyı bulup **Remove** (Kaldır) deyin.
 
 ## Dosyalar
 
